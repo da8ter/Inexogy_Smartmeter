@@ -119,7 +119,7 @@ if (!defined('vtBoolean')) {
 
 		if (($username !== "") AND ($password !== "") AND ($SmartmeterUID !== "")) {
 
-			$curl = curl_init('https://api.discovergy.com/public/v1/meters');
+			$curl = curl_init('https://api.inexogy.com/public/v1/meters');
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
 			curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
 			curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
@@ -153,8 +153,8 @@ if (!defined('vtBoolean')) {
 					$locationCountry = $meter->location->country;
 					$meterlocation = $locationStreet." ".$locationStreetNumber." ".$locationzip." ".$locationCity." ".$locationCountry;
 					$scalingFactor = $meter->scalingFactor;
-
-					$curl = curl_init('https://api.discovergy.com/public/v1/field_names?meterId='.$meterid);
+ 
+					$curl = curl_init('https://api.inexogy.com/public/v1/field_names?meterId='.$meterid);
 					curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
 					curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
 					curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
@@ -373,7 +373,7 @@ if (!defined('vtBoolean')) {
 		$manufacturerId = GetValue($this->GetIDForIdent('manufacturerId'));
 		$Meter_Field_Names = GetValue($this->GetIDForIdent("meter_field_names"));
 
-		$curl = curl_init('https://api.discovergy.com/public/v1/last_reading?meterId='.$meterid);
+		$curl = curl_init('https://api.inexogy.com/public/v1/last_reading?meterId='.$meterid);
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
 		curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
@@ -922,7 +922,7 @@ if (!defined('vtBoolean')) {
 
 		if (($username !== "") AND ($password !== "")) {
 			
-			$curl = curl_init('https://api.discovergy.com/public/v1/meters');
+			$curl = curl_init('https://api.inexogy.com/public/v1/meters');
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
 			curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
 			curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
