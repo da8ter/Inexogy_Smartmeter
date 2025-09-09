@@ -56,3 +56,6 @@ Daten Einspeisezähler:
 * Update bei aWATTar API 
 
 Sollten weitere Zähler benötigt werden bitte im Forum https://www.symcon.de/forum/threads/43805-Modul-Discovergy-Smartmeter-die-zweite-f%C3%BCr-Module-Store  posten. Für den Einbau benötige ich 'manufacturerId' und evtl. ein Beispiel JSON. Bitte melden.
+
+## Version 2.2.2 (09.09.2025)
+* Update API URL
